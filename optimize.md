@@ -1,0 +1,19 @@
+wasm vm optimize for ontology
+
+1.以当前ontology master为基础
+
+2.Folk最新的wagon项目作为单独repo
+
+3.保留wasm 的 executionEngine作为wasm执行的入口
+
+4.System call(service) 接口为：func([]uint64,ctx)(uint64,error)
+
+5.Wasm vm 删除所有Float相关
+
+6.Wasm vm需要增加input buffer 和 return buffer处理输入输出
+
+7.Wasm vm需要增加 gaslimit和service map接口，以便注入
+
+8.Wasm vm需要增加对（env function）的处理，以便调用service map中的函数
+
+9.Wasm vm 的stack 深度限制
