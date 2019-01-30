@@ -10,7 +10,7 @@ wasm vm optimize for ontology
 
 5.System call(service) 接口为：func([]uint64,ctx)(uint64,error)
 
-6.Wasm vm 增加 validation接口，供合约deploy时调用
+6.Wasm vm 增加 validation接口，供合约deploy时调用，validation 要检查import的库是否被允许
 
 7.Wasm vm 删除所有Float相关
 
